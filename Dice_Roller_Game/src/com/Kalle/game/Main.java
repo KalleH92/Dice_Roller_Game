@@ -15,9 +15,21 @@ public class Main {
                         int playerNumber = i + 1;
                         System.out.println("Name of player " + playerNumber + ":");
 
-                        String player = sc.next();
+                        switch (playerNumber) {
+                                case 1:
+                                        String playerOne = sc.next();
+                                        break;
+                                case 2:
+                                        String playerTwo = sc.next();
+                                        break;
+                                case 3:
+                                        String playerThree = sc.next();
+                                        break;
+                                case 4:
+                                        String playerFour = sc.next();
+                                        break;
+                        }
                 }
-
 
                 System.out.println("How many dices to roll(1-5)?");
                 int dices = sc.nextInt();
@@ -75,8 +87,9 @@ public class Main {
                                         int totalFive = randomOne + randomTwo +randomThree + randomFour + randomFive;
                                         System.out.println(totalFive);
                                         break;
-
                         }
+
+
 
                 }
                 }
